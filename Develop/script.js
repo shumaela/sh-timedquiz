@@ -94,6 +94,8 @@ document.addEventListener('DOMContentLoaded', function () {
       const initials = initialsInput.value.trim();
   
       if (initials !== '') {
+        // Update the result text to display initials and score
+        resultText.innerText = `Your Score: ${score} | Initials: ${initials}`;
         // You can save the initials and score as needed (e.g., localStorage, server-side, etc.)
         console.log(`Initials: ${initials}, Score: ${score}`);
       }
