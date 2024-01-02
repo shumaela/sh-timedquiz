@@ -96,14 +96,15 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function updateTimer() {
-    timeRemaining--;
+      timeRemaining--;
 
-    if (timeRemaining <= 0) {
-      endQuiz();
-    } else {
-      timerDisplay.innerText = timeRemaining;
-    } 
-  }
+      if (timeRemaining <= 0) {
+        endQuiz();
+      } else {
+        timerDisplay.innerText = timeRemaining;
+      }
+    }
+
 
   function submitScore() {
     const initials = initialsInput.value.trim();
