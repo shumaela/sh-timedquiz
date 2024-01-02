@@ -3,10 +3,37 @@ body {
     text-align: center;
     margin: 50px;
   }
+
+#start-btn {
+  background-color: #4CAF50; 
+  color: white; 
+  padding: 15px 20px; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+#start-btn:hover {
+  background-color: #45a049; /* Darker green color on hover */
+}
+
+
+#quiz-container h1 {
+  color: whitesmoke;
+  font-size: 30px; 
+  font-family: Squada One;
+  margin-bottom: 20px; 
+}
+
   
   #quiz-container {
     max-width: 600px;
     margin: 0 auto;
+    font-family: Squada One;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 20px;
   }
   
   .hide {
@@ -16,6 +43,7 @@ body {
   #options-container {
     display: flex;
     flex-direction: column;
+    background-color: rgb(143, 59, 59);
   }
   
   button {

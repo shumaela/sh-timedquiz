@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentQuestionIndex = 0;
     let timer;
     let timeRemaining = 60; // in seconds
-    let score = 0;
+    let score = 0; 
   
     const questions = [
       {
@@ -21,9 +21,24 @@ document.addEventListener('DOMContentLoaded', function () {
         correctAnswer: 'Paris',
       },
       {
-        question: 'Which planet is known as the Red Planet?',
-        options: ['Venus', 'Mars', 'Jupiter', 'Saturn'],
-        correctAnswer: 'Mars',
+        question: 'What is the capital of Australia?',
+        options: ['Canberra', 'Sydney', 'Melbourne', 'Perth'],
+        correctAnswer: 'Canberra',
+      },
+      {
+        question: 'What is the capital of Japan?',
+        options: ['Osaka', 'Kyoto', 'Nagoya', 'Tokyo'],
+        correctAnswer: 'Tokyo',
+      },
+      {
+        question: 'What is the capital of Switzerland?',
+        options: ['Zurich', 'Geneva', 'Bern', 'Thun'],
+        correctAnswer: 'Bern',
+      },
+      {
+        question: 'What is the capital of Malaysia?',
+        options: ['Kuala Lumpur', 'Kuching', 'George Town', 'Putrajaya'],
+        correctAnswer: 'Kuala Lumpur',
       },
       // Add more questions as needed
     ];
@@ -96,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (initials !== '') {
         // Update the result text to display initials and score
         resultText.innerText = `Your Score: ${score} | Initials: ${initials}`;
-        // You can save the initials and score as needed (e.g., localStorage, server-side, etc.)
+        // you can save the initials and score as needed (e.g., localStorage, server-side, etc.)
         console.log(`Initials: ${initials}, Score: ${score}`);
       }
     }
